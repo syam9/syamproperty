@@ -1,0 +1,7 @@
+[build]
+  command = ""
+  publish = "" # Functions-only repo, no static site to publish
+
+[functions]
+  directory = "netlify/functions"
+
