@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#000000">
+  <title>Redirecting...</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Auto full screen
+      if (document.documentElement.requestFullscreen) {
+        document.documentElement.requestFullscreen();                         
+      } else if (document.documentElement.mozRequestFullScreen) {       
+        document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) {                                                        
+        document.documentElement.webkitRequestFullscreen();                               
+      } else if (document.documentElement.msRequestFullscreen) {                    
+        document.documentElement.msRequestFullscreen();                                                          
+      }                                                                      
+
+      // Redirect tanpa user boleh copy URL                 
+      setTimeout(function () {                                                                 
+        // window.location.replace("https://mesyamuddin.netlify.app/");
+        window.location.replace("http://n8n.mescoffee.gbnet.cloud/webhook/ringAI/view");
+      }, 3000); // delay bagi animation sempat play                                                                         
+
+      // Redirect tanpa user boleh copy URL                 
+      // setTimeout(function () {                                                                 
+      //   window.location.replace("https://hexa-freedom.netlify.app/");
+      // }, 3000); // delay bagi animation sempat play                                                                         
+        
+                                                                                     
+      // Disable copy-paste                                                                      
+      document.addEventListener('copy', (e) => e.preventDefault());                     
+      document.addEventListener('cut', (e) => e.preventDefault());                                  
+      document.addEventListener('contextmenu', (e) => e.preventDefault());                 
+    });                                                                                         
+  </script>                                                                            
+  <style>
+    body {
+    margin: 0;
+    background-color: #02abb7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+        font-family: 'Arial', sans-serif;
+  }
+      .loading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loading-text {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: 1px;
+  }
+  </style>
+</head>                                
+<body>
+<!--   <div class="loading&#45;container"> -->
+<!--   <lottie&#45;player  -->
+<!--   src="https://assets10.lottiefiles.com/packages/lf20_kxsd2ytq.json"  -->
+<!--   background="transparent"   -->
+<!--   speed="1"   -->
+<!--   style="width: 180px; height: 180px;" -->
+<!--   loop   -->
+<!--   autoplay> -->
+<!--  </lottie&#45;player> -->
+<!--  <p class="loading&#45;text">Loading...</p> -->
+<!--   </div> -->
+
+</body>                                                                                           
+</html>
